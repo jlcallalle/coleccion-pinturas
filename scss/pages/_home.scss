@@ -96,14 +96,15 @@ $blue: #0074d9;
         margin: 0 12px 12px 0;
         cursor: pointer;
         outline: none;
-        border: 1px solid #707071;
+        border: 1px solid #D1D1D1;
         color: #707071;
         padding: 6px 23px;
-        border-radius: 8px;
+        border-radius: 6px;
+        background-color: white;
         &.active {
             background-color: #52B0C4;
             color: white;
-            border: 1px solid #707071;
+            border: 1px solid #D1D1D1;
             outline: none;
         }
         &.cat-red {
