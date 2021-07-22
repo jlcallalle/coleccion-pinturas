@@ -3454,12 +3454,16 @@ body {
   position: relative;
 }
 .menu-desplegable .menu-lista {
-  display: none;
-  position: relative;
-  height: 0;
-  transition: height 0.4s ease;
+  /* display:none; */
+  /* position: relative; */
+  position: absolute;
+  /* height: 0; */
+  transition: all 0.4s ease-in-out 0s;
   background-color: #0D7D9F;
   z-index: 10;
+  width: 240px;
+  left: 252px;
+  opacity: 0.86;
 }
 .menu-desplegable .menu-lista ul {
   margin: 0;
@@ -3475,19 +3479,25 @@ body {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid lightgray;
+  height: 90px;
+  background-color: #5BA1B3;
 }
 .menu-desplegable .menu-lista li a:hover {
   text-decoration: none;
+}
+.menu-desplegable .menu-lista li a.active {
+  background-color: #28849F;
 }
 .menu-desplegable .menu-lista li:last-child a {
   border-bottom: none;
 }
 .menu-desplegable .active + .menu-lista {
-  display: block;
   position: absolute;
   height: auto;
   right: 0;
   width: 240px;
+  transition: all 0.4s ease-in-out 0s;
+  left: 0;
 }
 
 /* Slider Style*/
