@@ -127,5 +127,26 @@ $(function () {
         event.preventDefault();
     });
 
+    /* Slider Buscador */
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        nav: true,
+        dots: false, 
+        navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+        loop: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
+     
+
 
 });
