@@ -1,0 +1,9 @@
+.footer {
+    border:1px solid coral;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
