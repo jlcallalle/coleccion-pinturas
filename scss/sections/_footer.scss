@@ -1,9 +1,35 @@
 .footer {
-    border:1px solid coral;
+    background-color: $turquesa;
+    padding: 40px 0;
+    ul {
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+    }
+    a {
+        color: white;
+        font-size: 18px;
+        font-family: 'Roboto';
+    }
 }
 
-.clearfix::after {
+/* .clearfix::after {
     content: "";
     clear: both;
     display: table;
+  }
+ */
+
+  .social-media {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+      a {
+        margin-right: 25px;
+        i {
+            font-size: 24px;
+        }
+      }
   }
