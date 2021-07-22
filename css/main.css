@@ -3882,13 +3882,38 @@ body {
 }
 
 .box-title {
-  color: #707071;
   background-color: #F8F8F8;
-  font-size: 43px;
-  height: 112px;
+  height: 77px;
   border-bottom: 1px solid #707070;
   display: flex;
   align-items: center;
+}
+@media only screen and (min-width: 700px) {
+  .box-title {
+    height: 95px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .box-title {
+    height: 112px;
+  }
+}
+.box-title h2 {
+  font-size: 33px;
+  font-weight: 400;
+  color: #707071;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  .box-title h2 {
+    text-align: left;
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .box-title h2 {
+    font-size: 43px;
+  }
 }
 
 .page-buscador {
@@ -3907,14 +3932,24 @@ body {
 
 .form-buscador {
   position: relative;
-  width: 877px;
+  max-width: 877px;
   margin: 0 auto;
+}
+@media only screen and (min-width: 700px) {
+  .form-buscador {
+    max-width: 596px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .form-buscador {
+    max-width: 877px;
+  }
 }
 
 .search-bar {
   margin: 0 auto;
   width: 100%;
-  height: 74px;
+  height: 40px;
   padding: 0 20px 0 50px;
   border: 1px solid #D0CFCE;
   outline: none;
@@ -3930,6 +3965,11 @@ body {
       }
   } */
 }
+@media only screen and (min-width: 700px) {
+  .search-bar {
+    height: 74px;
+  }
+}
 .search-bar::placeholder {
   color: #D8D8D8;
 }
@@ -3938,8 +3978,13 @@ body {
   font-size: 24px;
   position: absolute;
   left: 19px;
-  top: 25px;
+  top: 8px;
   color: #c2b0b585;
+}
+@media only screen and (min-width: 700px) {
+  .search-icon {
+    top: 25px;
+  }
 }
 
 .item-obra {
@@ -3956,6 +4001,7 @@ body {
 
 .texto-obra {
   margin-top: 18px;
+  padding: 0 4px;
 }
 .texto-obra h5 {
   color: #898989;
