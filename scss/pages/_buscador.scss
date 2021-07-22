@@ -1,0 +1,19 @@
+.nav-page {
+    background-color: $turquesa;
+}
+
+.nav-page-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-title {
+    color: #707071;
+    background-color: #F8F8F8;
+    font-size: 43px;
+    height: 112px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+}

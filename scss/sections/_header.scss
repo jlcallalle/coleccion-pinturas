@@ -164,7 +164,9 @@
         align-items: center;
         justify-content: center;
         border-bottom: 1px solid lightgray;
-       
+        &:hover {
+          text-decoration: none;
+        }
       }
       &:last-child {
         a {

@@ -1,6 +1,10 @@
 .footer {
-    background-color: $turquesa;
-    padding: 40px 0;
+
+    .footer-top {
+        background-color: $turquesa;
+        padding: 58px 0;
+    }
+    
     ul {
         li {
             list-style: none;
@@ -9,8 +13,21 @@
     }
     a {
         color: white;
-        font-size: 18px;
+        font-size: 19px;
         font-family: 'Roboto';
+    }
+
+    .lista-footer {
+        &:before {
+            display: block;
+            content: '';
+            width: 1px;
+            height: 129px;
+            position: absolute;
+            background-color: white;
+            right: 10px;
+            top: -5px;
+        }
     }
 }
 
@@ -29,7 +46,12 @@
       a {
         margin-right: 25px;
         i {
-            font-size: 24px;
+            font-size: 30px;
         }
       }
+  }
+
+  .footer-sub {
+      background-color: $turquesa-dark;
+      height: 18px;
   }
