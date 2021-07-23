@@ -292,6 +292,8 @@
     width: 50%;
     height: 80px;
     text-decoration: none;
+    border-top: 1px solid #DBDBDB;
+    opacity: 0.6;
     @include min-screen($tp){
       font-size: 25px;
     }

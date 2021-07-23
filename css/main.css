@@ -3601,6 +3601,8 @@ body {
   width: 50%;
   height: 80px;
   text-decoration: none;
+  border-top: 1px solid #DBDBDB;
+  opacity: 0.6;
 }
 @media only screen and (min-width: 700px) {
   .link-slider .link-virtual {
@@ -3985,6 +3987,7 @@ body {
 }
 .btn-mensaje.active + .contenido-mensaje {
   display: block;
+  border-bottom-left-radius: 0;
 }
 .btn-mensaje:hover {
   text-decoration: none;
@@ -4113,6 +4116,7 @@ body {
 .btn-explorar:hover {
   color: white;
   text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .box-detalle-obra {

@@ -235,6 +235,7 @@
     }
     &.active + .contenido-mensaje {
         display: block;
+        border-bottom-left-radius: 0
     }
     &:hover {
         text-decoration: none;
@@ -369,6 +370,7 @@
     &:hover {
         color:white;
         text-decoration: none;
+        background-color: rgba(255,255,255,0.3);
     }
 }
 
