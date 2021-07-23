@@ -3862,24 +3862,6 @@ body {
   border: 1px solid #D1D1D1;
   outline: none;
 }
-.filtering button.cat-red {
-  background: #ff4136;
-}
-.filtering button.cat-red:hover {
-  background: #e90d00;
-}
-.filtering button.cat-green {
-  background: #2ecc40;
-}
-.filtering button.cat-green:hover {
-  background: #208e2c;
-}
-.filtering button.cat-blue {
-  background: #0074d9;
-}
-.filtering button.cat-blue:hover {
-  background: #004b8d;
-}
 .filtering .row .card {
   opacity: 0;
   display: none;
@@ -3902,7 +3884,7 @@ body {
 .pin_container {
   margin: 0;
   padding: 0;
-  width: 80vw;
+  width: 100vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -4067,23 +4049,94 @@ body {
   width: 100%;
 }
 
+.cardContainer {
+  transition: all 0.3s ease;
+  perspective: 800px;
+  padding-left: 1%;
+}
+
+.secondRow {
+  margin-top: -1.4%;
+}
+
+.card-flip {
+  width: 100%;
+  height: 270px;
+  cursor: pointer;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-flip.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-flip .front,
+.card-flip .back {
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  max-height: 270px;
+  border-radius: 12px;
+}
+
+.card-flip .back {
+  line-height: 25px;
+  transform: rotateY(180deg);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  padding: 4%;
+  font-weight: 100;
+  text-align: left;
+  font-weight: bold;
+}
+
+.texto-flip {
+  margin-bottom: 8px;
+}
 .texto-flip h4 {
-  font-size: 43px;
+  font-size: 17px;
   font-weight: bold;
   color: white;
+  margin-bottom: 13px;
 }
 .texto-flip p {
-  font-size: 30px;
-  font-weight: 500px;
   color: white;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+
+.box-btn-flip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-explorar {
-  font-size: 42px;
   color: white;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  background-color: white;
+  font-size: 18px;
+  background-color: lightgray;
+  padding: 4px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.btn-explorar:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .box-detalle-obra {

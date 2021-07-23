@@ -25,13 +25,6 @@ var MyApp = {
             console.log( 'valor', filterValue );
             $grid.isotope({ filter: filterValue });
         });
-
-        /* $('.filters').on( 'click', 'button', function() {
-            var filterValue = $( this ).attr('data-filter');
-            console.log( 'valor', filterValue );
-            $grid.isotope({ filter: filterValue });
-        }); */
-
     },
     toggeMenu : function () {
         $('.button-nav--toggle').on('click', function(e) {
@@ -44,7 +37,6 @@ var MyApp = {
         var inputBox = $('.searchbox-input');
         var searchBox = $('.searchbox');
         var isOpen = false;
-        console.log('isOpen', isOpen);
         submitIcon.click(function(){
             if(isOpen == false){
                 searchBox.addClass('searchbox-open');
@@ -74,21 +66,28 @@ var MyApp = {
             }
         });
     },
-    filtroResultados : function () {
+    mensajeSliderHome : function () {
+        $('.btn-mensaje').on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    },
+    filterCaregoriaHome : function () {
+        $( ".box-galeria .nav-pills a" ).click(function( event ) {
+            console.log('click');
+            event.preventDefault();
+        });
+    },
+    filtroResultadosHome : function () {
         var filterActive;
 
         function filterCategory(category) {
             if (filterActive != category) {
                 
-                // reset results list
                 $('.filter-cat-results .f-cat').removeClass('active');
-                
-                // elements to be filtered
                 $('.filter-cat-results .f-cat')
                     .filter('[data-cat="' + category + '"]')
                     .addClass('active');
-                
-                // reset active filter
                 filterActive = category;
                 $('.filtering button').removeClass('active');
             }
@@ -134,44 +133,35 @@ var MyApp = {
 
 $(function () {
     console.log('ready');    
-    if ($('.only-numbers').length) {
-        MyApp.onlyNumbers();
-    }
-
     MyApp.slider();
     MyApp.filtros();
     MyApp.toggeMenu();
     MyApp.searchBox();
-    MyApp.filtroResultados();
+    MyApp.filtroResultadosHome();
+    MyApp.filterCaregoriaHome();
+    MyApp.mensajeSliderHome();
+
     if ($('.page').length) {
         MyApp.carruselBusqueda();
     }
 
-    $( ".box-galeria a" ).click(function( event ) {
-        console.log('click');
-        event.preventDefault();
-    });
-  
-    
-
-    $('.btn-mensaje').on('click', function(e) {
-        console.log('clik btn mnensaje');
+    $(".card-flip").click(function (e) {
         e.preventDefault();
-        $(this).toggleClass('active');
+        $(this).toggleClass("flipped");
     });
 
-
-  /*   var widthViewport = $(window).width();
-    console.log(widthViewport); 
-    var espacioRightVieport = widthViewport - 1140
-    var espacioTotal = espacioRightVieport -140
-    console.log(espacioTotal);  */
-
-    $('.item-obra').click(function() {
-        console.log('click flip');
-        $(this).toggleClass('flip')  
+   /*  $(".btn-explorar").click(function () {
+        console.log('btn explorar');
     });
-
-
+ */
+   /*  $( ".btn-explorar" ).on( "click", function() {
+        console.log('aaa');
+    });
+ */
+    $(".btn-explorar").bind('click', function() {
+        console.log('url');
+        window.location.href = $(this).attr('href');
+    });
+    
 
 });

@@ -149,97 +149,121 @@
                     <div class="tab-content" id="pills-tabContent">
                       <div class="tab-pane fade show active" id="pills-artista" role="tabpanel" aria-labelledby="pills-artista-tab">
     
+                        <!--Filtro Artistas-->
                         <div class="filtering">
-                            <ul class="nav nav-pills nav-filter-cat">
-                                <li><button class="item-filter cat-all active">Todos</button></li>
-                                <li><button class="item-filter " data-cat="cat-artista-1">Artista 1</button></li>
-                                <li><button class="item-filter" data-cat="cat-artista-2">Artista 2</button></li>
-                                <li><button class="item-filter" data-cat="cat-artista-3">Artista 3</button></li>
-                                <li><button class="item-filter" data-cat="cat-artista-4">Artista 4</button></li>
-                            </ul>
-                            <div class="row filter-cat-results"> 
-                              <div class="pin_container">
-                                  <div class="card card_large f-cat cat-red" data-cat="cat-artista-1">
-                                    <div class="item-obra">
-                                      <img src="images/obra1.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
+                          <ul class="nav nav-pills nav-filter-cat">
+                              <li><button class="item-filter cat-all active">Todos</button></li>
+                              <li><button class="item-filter " data-cat="cat-artista-1">Artista 1</button></li>
+                              <li><button class="item-filter" data-cat="cat-artista-2">Artista 2</button></li>
+                              <li><button class="item-filter" data-cat="cat-artista-3">Artista 3</button></li>
+                              <li><button class="item-filter" data-cat="cat-artista-4">Artista 4</button></li>
+                          </ul>
+                          <div class="row filter-cat-results"> 
+                            <div class="pin_container">
+
+                                <div class="card card_large f-cat" data-cat="cat-artista-1">
+                                    <div class="cardWrapper">
+                                        <div class="card-flip">
+                                          <div class="front">
+                                            <div class="item-obra">
+                                              <img src="images/obra1.png" alt="obra1">
+                                              <a href="" class="icon-flip"></a>
+                                            </div>
+                                          </div>
+                                          <div class="back">
+                                            <div class="texto-flip">
+                                              <h4>Paisaje Cordillerano</h4>
+                                              <p>Sin fecha</p>
+                                              <p>Óleo sobre tela 80,5 x 105 cm </p> 
+                                              <p>Firma: extremo inferior izquierdo: ALF. ARAYA J.</p>
+                                              <p>Nº Inv. 66295-K</p>
+                                            </div>
+                                            <div class="box-btn-flip">
+                                              <a href="detalle.html" class="btn-explorar">Explorar</a>
+                                            </div>
+                                          </div>
+                                        </div>
                                     </div>
+                                </div>
+
+
+                                <div class="card card_small f-cat" data-cat="cat-artista-1">
+                                  <div class="item-obra">
+                                    <img src="images/obra2.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_small f-cat cat-red" data-cat="cat-artista-1">
-                                    <div class="item-obra">
-                                      <img src="images/obra2.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_large f-cat" data-cat="cat-artista-1">
+                                  <div class="item-obra">
+                                    <img src="images/obra3.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_large f-cat cat-red" data-cat="cat-artista-1">
-                                    <div class="item-obra">
-                                      <img src="images/obra3.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_small f-cat" data-cat="cat-artista-1">
+                                  <div class="item-obra">
+                                    <img src="images/obra4.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_small f-cat cat-red" data-cat="cat-artista-1">
-                                    <div class="item-obra">
-                                      <img src="images/obra4.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_large f-cat data-cat="cat-artista-1">
+                                  <div class="item-obra">
+                                    <img src="images/obra5.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_large f-cat cat-blue" data-cat="cat-artista-1">
-                                    <div class="item-obra">
-                                      <img src="images/obra5.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_small f-cat data-cat="cat-artista-2">
+                                  <div class="item-obra">
+                                    <img src="images/obra6.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_small f-cat cat-blue" data-cat="cat-artista-2">
-                                    <div class="item-obra">
-                                      <img src="images/obra6.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_small f-cat data-cat="cat-artista-2">
+                                  <div class="item-obra">
+                                    <img src="images/obra7.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_small f-cat cat-blue" data-cat="cat-artista-2">
-                                    <div class="item-obra">
-                                      <img src="images/obra7.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_medium f-cat" data-cat="cat-artista-2">
+                                  <div class="item-obra">
+                                    <img src="images/obra8.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_medium f-cat cat-bluem" data-cat="cat-artista-2">
-                                    <div class="item-obra">
-                                      <img src="images/obra8.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_small f-cat" data-cat="cat-artista-2">
+                                  <div class="item-obra">
+                                    <img src="images/obra9.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_small f-cat cat-red" data-cat="cat-artista-2">
-                                    <div class="item-obra">
-                                      <img src="images/obra9.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_large f-cat" data-cat="cat-artista-3">
+                                  <div class="item-obra">
+                                    <img src="images/obra10.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_large f-cat cat-green" data-cat="cat-artista-3">
-                                    <div class="item-obra">
-                                      <img src="images/obra10.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_small f-cat" data-cat="cat-artista-3">
+                                  <div class="item-obra">
+                                    <img src="images/obra11.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_small f-cat cat-green" data-cat="cat-artista-3">
-                                    <div class="item-obra">
-                                      <img src="images/obra11.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
+                                </div>
+                                <div class="card card_large f-cat" data-cat="cat-artista-4">
+                                  <div class="item-obra">
+                                    <img src="images/obra12.png" alt="obra1">
+                                    <a href="" class="icon-flip"></a>
                                   </div>
-                                  <div class="card card_large f-cat cat-green" data-cat="cat-artista-4">
-                                    <div class="item-obra">
-                                      <img src="images/obra12.png" alt="obra1">
-                                      <a href="" class="icon-flip"></a>
-                                    </div>
-                                  </div>
-                              </div>
+                                </div>
                             </div>
+                          </div>
                         </div>
 
                       </div>
                       <div class="tab-pane fade" id="pills-anio" role="tabpanel" aria-labelledby="pills-anio-tab">
+                        <!--Filtro Años-->
                         <p>contenido año</p>
                       </div>
                       <div class="tab-pane fade" id="pills-tematica" role="tabpanel" aria-labelledby="pills-tematica-tab">
+                        <!--Filtro Temático-->
                         <p>contenido temático</p>
                       </div>
                     </div>
@@ -247,6 +271,9 @@
                 </div>
               </div>
           </section>
+
+
+
           
           <div class="footer ">
             <div class="footer-top">
