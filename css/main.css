@@ -4117,7 +4117,20 @@ body {
   color: white;
   font-weight: 500;
   font-size: 16px;
-  margin: 0;
+  margin: 0 0 6px 0;
+  position: relative;
+}
+.texto-flip p::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid;
+  width: 50%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box-btn-flip {
@@ -4129,8 +4142,8 @@ body {
 .btn-explorar {
   color: white;
   font-size: 18px;
-  background-color: lightgray;
-  padding: 4px 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5px 23px;
   border-radius: 10px;
   text-decoration: none;
 }
