@@ -141,6 +141,29 @@ var MyApp = {
             window.location.href = $(this).attr('href');
         });
     },
+    carruselRelacionado : function () {
+
+         console.log('carrousel relacionado');
+         
+          var owl = $('.owl-carousel-relacionados');
+          owl.owlCarousel({
+              margin:20,
+              nav: true,
+              dots: false, 
+              loop: true,
+              responsive: {
+                  0: {
+                      items: 2
+                  },
+                  600: {
+                      items: 3
+                  },
+                  1000: {
+                      items: 6
+                  }
+              }
+          })
+  },
 }
 
 $(function () {
@@ -154,9 +177,12 @@ $(function () {
     MyApp.mensajeSliderHome();
     MyApp.toggleFlipCard();
     MyApp.linkCard();
+    MyApp.carruselRelacionado();
 
     if ($('.page').length) {
         MyApp.carruselBusqueda();
     }
+
+    
 
 });

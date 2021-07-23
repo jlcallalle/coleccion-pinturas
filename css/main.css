@@ -4119,12 +4119,67 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.section-breadcrumb .breadcrumb {
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 0;
+}
+.section-breadcrumb .breadcrumb a {
+  font-size: 18px;
+  color: #BEBEBE;
+}
+
+.box-img-obra {
+  display: flex;
+  position: relative;
+}
+.box-img-obra img {
+  box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.16);
+}
+.box-img-obra .box-tools {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+.box-img-obra .box-tools i {
+  font-size: 22px;
+  margin: 0 9px 0 0;
+}
+
+section.section-detalle-obra {
+  padding: 0 0 90px 0;
+}
+
+.descripcion-obra {
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+.descripcion-obra h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #707070;
+}
+.descripcion-obra p {
+  font-size: 16px;
+  color: #707070;
+}
+
 .box-detalle-obra {
-  background-image: url("../../images/contenido-detalle.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  height: 752px;
-  margin: 0 auto 84px auto;
+  display: flex;
+}
+
+.btn-saber {
+  border: 1px solid #A2B440;
+  color: #A2B440;
+  font-size: 22px;
+  border-radius: 0;
+}
+.btn-saber:hover {
+  border: 1px solid #A2B440;
+  color: #A2B440;
 }
 
 .nav-page {
