@@ -4108,7 +4108,7 @@ body {
   margin-bottom: 8px;
 }
 .texto-flip h4 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   margin-bottom: 13px;
@@ -4116,7 +4116,7 @@ body {
 .texto-flip p {
   color: white;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 6px 0;
   position: relative;
 }
@@ -4129,8 +4129,12 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;
+  bottom: 0;
   margin-left: auto;
   margin-right: auto;
+}
+.texto-flip p:last-child::after {
+  content: none;
 }
 
 .box-btn-flip {
