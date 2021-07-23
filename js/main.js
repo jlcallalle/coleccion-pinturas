@@ -14,7 +14,7 @@ var MyApp = {
             $(this).find(".carousel-caption").append( "<div class='slider-number'>" + "<span class='indice'>" + indice + "</span>"  + "<i class='slash'> / </i>" + "<span class='cantidad'>" + cantidad + "</span>" + "</div>" );
         });
     },
-    filtros : function () {
+   filtros : function () {
         var $grid = $('.grid').isotope({
             itemSelector: '.element-item',
             layoutMode: 'fitRows',
@@ -25,7 +25,7 @@ var MyApp = {
             console.log( 'valor', filterValue );
             $grid.isotope({ filter: filterValue });
         });
-    },
+    }, 
     toggeMenu : function () {
         $('.button-nav--toggle').on('click', function(e) {
             e.preventDefault();
@@ -129,6 +129,18 @@ var MyApp = {
                 }
             })
     },
+    toggleFlipCard : function () {
+        $(".card-flip").click(function (e) {
+            e.preventDefault();
+            $(this).toggleClass("flipped");
+        });
+    },
+    linkCard : function () {
+        $(".btn-explorar").bind('click', function() {
+            console.log('url');
+            window.location.href = $(this).attr('href');
+        });
+    },
 }
 
 $(function () {
@@ -140,28 +152,11 @@ $(function () {
     MyApp.filtroResultadosHome();
     MyApp.filterCaregoriaHome();
     MyApp.mensajeSliderHome();
+    MyApp.toggleFlipCard();
+    MyApp.linkCard();
 
     if ($('.page').length) {
         MyApp.carruselBusqueda();
     }
-
-    $(".card-flip").click(function (e) {
-        e.preventDefault();
-        $(this).toggleClass("flipped");
-    });
-
-   /*  $(".btn-explorar").click(function () {
-        console.log('btn explorar');
-    });
- */
-   /*  $( ".btn-explorar" ).on( "click", function() {
-        console.log('aaa');
-    });
- */
-    $(".btn-explorar").bind('click', function() {
-        console.log('url');
-        window.location.href = $(this).attr('href');
-    });
-    
 
 });
