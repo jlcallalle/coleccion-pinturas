@@ -78,7 +78,10 @@
   z-index: 10;
   position: absolute;
   width: 100%;
-  top: 10px;
+  top: 0;
+  @include min-screen($tp){
+		top: 10px;
+	}
 }
 
 .slider-top-inner {
@@ -141,17 +144,16 @@
 }
 
 .menu-desplegable {
-   position: relative;
+   position: static;
+   @include min-screen($tp){
+		position: relative;
+	}
   .menu-lista {
-    /* display:none; */
-    /* position: relative; */
     position:absolute;
-    /* height: 0; */
     transition: all 0.4s ease-in-out 0s;
     background-color: #0D7D9F;
     z-index: 10;
     width: 240px;
-    //left: 252px;
     left: 440px;
     opacity: 0.86;
 
@@ -188,13 +190,15 @@
   }
 
   .active + .menu-lista {
-    //display: block;
     position: absolute;
     height: auto;
     right: 0;
-    width: 240px;
+    width: 100%;
     transition: all 0.4s ease-in-out 0s;
     left: 0;
+    @include min-screen($tp){
+      width: 240px;
+    }
   }
 
 }

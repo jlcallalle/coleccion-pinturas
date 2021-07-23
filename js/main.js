@@ -108,6 +108,28 @@ var MyApp = {
         });
     
     },
+    carruselBusqueda : function () {
+          /* Slider Buscador */
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin:10,
+                nav: true,
+                dots: false, 
+                navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+    },
 }
 
 $(function () {
@@ -121,33 +143,35 @@ $(function () {
     MyApp.toggeMenu();
     MyApp.searchBox();
     MyApp.filtroResultados();
+    if ($('.page').length) {
+        MyApp.carruselBusqueda();
+    }
 
     $( ".box-galeria a" ).click(function( event ) {
         console.log('click');
         event.preventDefault();
     });
+  
+    
 
-    /* Slider Buscador */
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        margin:10,
-        nav: true,
-        dots: false, 
-        navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
-        loop: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
-    })
-     
+    $('.btn-mensaje').on('click', function(e) {
+        console.log('clik btn mnensaje');
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
+
+
+  /*   var widthViewport = $(window).width();
+    console.log(widthViewport); 
+    var espacioRightVieport = widthViewport - 1140
+    var espacioTotal = espacioRightVieport -140
+    console.log(espacioTotal);  */
+
+    $('.item-obra').click(function() {
+        console.log('click flip');
+        $(this).toggleClass('flip')  
+    });
+
 
 
 });
