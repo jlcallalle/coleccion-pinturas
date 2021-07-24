@@ -4,7 +4,7 @@
 }
 
 .section-galeria {
-    padding: 45px 0;
+    padding: 45px 0 0 0;
     background-color: #F8F8F8;
 }
 
@@ -26,7 +26,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        &.pill-galeria {
+            justify-content: left;
+        }
         .nav-link {
             border: 1px solid #707071;
             border-radius: 20px;
@@ -82,10 +84,13 @@
 
 .contenido-pills {
     background-color: white;
-    padding: 22px 0;
+    padding: 22px 0 0 0;
 }
 
 
+.contenido-pills-inner {
+    background: linear-gradient(0deg,#040411 2%,rgba(5,96,178,0) 25%,rgba(3,36,72,0) 75%,#ffffff 95%);
+}
 /* ESTILO FILTROS HOME*/
 
 .filtering {
@@ -150,14 +155,24 @@
     
     .card_small {
         grid-row-end: span 26;
+        //background-color: rgba($color: #00ff73, $alpha: 1.0);
     }
     
     .card_medium {
         grid-row-end: span 33;
+        //background-color: rgba($color: #00b3ff, $alpha: 1.0);
     }
     
     .card_large {
         grid-row-end: span 45;
+        //height: 313px;
+        //background-color: rgba($color: #ff0000, $alpha: 1.0);
+        max-height: 314px;
+    }
+
+    .card_extra {
+        //grid-row-end: span 52;
+        //background-color: rgba($color: #ff00bf, $alpha: 1.0);
     }
 
 }
