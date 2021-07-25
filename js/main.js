@@ -14,7 +14,7 @@ var MyApp = {
             $(this).find(".carousel-caption").append( "<div class='slider-number'>" + "<span class='indice'>" + indice + "</span>"  + "<i class='slash'> / </i>" + "<span class='cantidad'>" + cantidad + "</span>" + "</div>" );
         });
     },
-   filtros : function () {
+   filtrosIsotope : function () {
         var $grid = $('.grid').isotope({
             itemSelector: '.element-item',
             layoutMode: 'fitRows',
@@ -167,9 +167,9 @@ var MyApp = {
 }
 
 $(function () {
-    console.log('ready');    
+    console.log('ready..');    
     MyApp.slider();
-    MyApp.filtros();
+    MyApp.filtrosIsotope();
     MyApp.toggeMenu();
     MyApp.searchBox();
     MyApp.filtroResultadosHome();
@@ -177,12 +177,8 @@ $(function () {
     MyApp.mensajeSliderHome();
     MyApp.toggleFlipCard();
     MyApp.linkCard();
-    MyApp.carruselRelacionado();
-
     if ($('.page').length) {
         MyApp.carruselBusqueda();
+        MyApp.carruselRelacionado();
     }
-
-    
-
 });
