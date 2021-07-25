@@ -160,8 +160,17 @@ var MyApp = {
                 }
             }
         })
-
   },
+  toggeDetalleObra : function () {
+        $(".btn-saber").click(function(e){
+            $(".contenido-saber-mas").toggle();
+            e.preventDefault();
+        });
+        $(".btn-ocultar").click(function(e){
+            $(".contenido-saber-mas").hide();
+            e.preventDefault();
+        });
+    },
 }
 
 $(function () {
@@ -182,15 +191,15 @@ $(function () {
     
     if ($('.page-detalle').length) {
         MyApp.carruselDetalle();
+        MyApp.toggeDetalleObra();
     }
 
-    $(".btn-saber").click(function(e){
-        $(".contenido-saber-mas").toggle();
+    $(".image-zoom").click(function(e){
+        console.log('zoom');
         e.preventDefault();
     });
-    $(".btn-ocultar").click(function(e){
-        $(".contenido-saber-mas").hide();
-        e.preventDefault();
-    });
+
+    
+
 
 });
