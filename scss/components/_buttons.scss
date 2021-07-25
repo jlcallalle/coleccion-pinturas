@@ -1,0 +1,25 @@
+.btn-saber {
+    border:1px solid $verde;
+    color: $verde;
+    font-size: 22px;
+    border-radius: 0;
+    padding: 8px 30px;
+    &:hover {
+        border:1px solid $verde;
+        color: $verde;
+        opacity: 0.8;
+    }
+}
+
+.btn-ocultar {
+    border:1px solid $verde;
+    color: $verde;
+    font-size: 22px;
+    border-radius: 0;
+    padding: 8px 30px;
+    &:hover {
+        border:1px solid $verde;
+        color: $verde;
+        opacity: 0.8;
+    }
+}

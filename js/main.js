@@ -205,4 +205,14 @@ $(function () {
     if ($('.page-detalle').length) {
         MyApp.carruselDetalle();
     }
+
+    $(".btn-saber").click(function(e){
+        $(".contenido-saber-mas").toggle();
+        e.preventDefault();
+    });
+    $(".btn-ocultar").click(function(e){
+        $(".contenido-saber-mas").hide();
+        e.preventDefault();
+    });
+
 });

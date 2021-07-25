@@ -3313,6 +3313,32 @@ body {
   src: url("/fonts/didot/didot-regular.ttf");
 }
 /* Components */
+.btn-saber {
+  border: 1px solid #A2B440;
+  color: #A2B440;
+  font-size: 22px;
+  border-radius: 0;
+  padding: 8px 30px;
+}
+.btn-saber:hover {
+  border: 1px solid #A2B440;
+  color: #A2B440;
+  opacity: 0.8;
+}
+
+.btn-ocultar {
+  border: 1px solid #A2B440;
+  color: #A2B440;
+  font-size: 22px;
+  border-radius: 0;
+  padding: 8px 30px;
+}
+.btn-ocultar:hover {
+  border: 1px solid #A2B440;
+  color: #A2B440;
+  opacity: 0.8;
+}
+
 .header-top {
   background-color: #ACACAC;
   color: white;
@@ -3417,9 +3443,9 @@ body {
   color: white;
 }
 
-/* Toggle BTN for Menu */
+/* TOGLE BTN MENU
+   =========== */
 .button-nav--toggle {
-  background: rgba(207, 159, 159, 0.2);
   height: 48px;
   position: relative;
   transition: transform 0.4s;
@@ -3512,148 +3538,8 @@ body {
   }
 }
 
-/* Slider Style*/
-.slider {
-  background-color: #F8F8F8;
-  position: relative;
-}
-
-.slider .carousel-control-prev {
-  right: 140px;
-  left: auto;
-}
-
-.slide .carousel-control-next {
-  right: 78px;
-}
-
-.slider .carousel-control-next, .slider .carousel-control-prev {
-  align-items: flex-end;
-  margin-bottom: 50px;
-  width: auto;
-  bottom: 60px;
-}
-
-.slider-number {
-  display: flex;
-  font-size: 30px;
-  align-items: center;
-  font-family: "Didot";
-}
-.slider-number .indice {
-  font-size: 54px;
-  position: relative;
-  top: -16px;
-}
-.slider-number .slash {
-  font-size: 96px;
-  position: relative;
-  left: -10px;
-}
-.slider-number .cantidad {
-  font-size: 25px;
-  position: relative;
-  top: 14px;
-}
-
-.link-slider {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  width: 100%;
-}
-@media only screen and (min-width: 1000px) {
-  .link-slider {
-    width: auto;
-  }
-}
-.link-slider .link-obras {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #0D7D9F;
-  font-size: 18px;
-  color: white;
-  width: 50%;
-  height: 80px;
-  text-decoration: none;
-}
-@media only screen and (min-width: 700px) {
-  .link-slider .link-obras {
-    font-size: 25px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .link-slider .link-obras {
-    width: 230px;
-    font-size: 20px;
-  }
-}
-.link-slider .link-virtual {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  background-color: transparent;
-  border-top: #747474;
-  color: white;
-  width: 50%;
-  height: 80px;
-  text-decoration: none;
-  border-top: 1px solid #DBDBDB;
-  opacity: 0.6;
-}
-@media only screen and (min-width: 700px) {
-  .link-slider .link-virtual {
-    font-size: 25px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .link-slider .link-virtual {
-    width: 230px;
-    font-size: 20px;
-  }
-}
-
-.carousel-caption {
-  bottom: 4rem;
-  z-index: 10;
-}
-
-.carousel-item {
-  height: calc(100vh - 36px);
-  max-height: 768px;
-  background: no-repeat center center scroll;
-  background-size: cover;
-}
-
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
-.title-item {
-  font-family: "Courier New";
-  font-size: 25px;
-  text-align: left;
-  max-width: 550px;
-}
-@media only screen and (min-width: 700px) {
-  .title-item {
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .title-item {
-    font-size: 36px;
-  }
-}
-
-/* búsqueda */
+/* BÚSQUEDA
+   =========== */
 .searchbox {
   position: relative;
   min-width: 50px;
@@ -3764,8 +3650,145 @@ body {
   height: 18px;
 }
 
-/* CARROUSEL HOME 
-   =========== */
+/* SLIDER STYLE */
+.slider {
+  background-color: #F8F8F8;
+  position: relative;
+}
+.slider .carousel-control-prev {
+  right: 140px;
+  left: auto;
+}
+.slider .carousel-control-next {
+  right: 78px;
+}
+.slider .carousel-control-next,
+.slider .carousel-control-prev {
+  align-items: flex-end;
+  margin-bottom: 50px;
+  width: auto;
+  bottom: 60px;
+}
+
+.slider-number {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  font-family: "Didot";
+}
+.slider-number .indice {
+  font-size: 54px;
+  position: relative;
+  top: -16px;
+}
+.slider-number .slash {
+  font-size: 96px;
+  position: relative;
+  left: -10px;
+}
+.slider-number .cantidad {
+  font-size: 25px;
+  position: relative;
+  top: 14px;
+}
+
+.link-slider {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .link-slider {
+    width: auto;
+  }
+}
+.link-slider .link-obras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0D7D9F;
+  font-size: 18px;
+  color: white;
+  width: 50%;
+  height: 80px;
+  text-decoration: none;
+}
+@media only screen and (min-width: 700px) {
+  .link-slider .link-obras {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .link-slider .link-obras {
+    width: 230px;
+    font-size: 20px;
+  }
+}
+.link-slider .link-virtual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: transparent;
+  border-top: #747474;
+  color: white;
+  width: 50%;
+  height: 80px;
+  text-decoration: none;
+  border-top: 1px solid #DBDBDB;
+  opacity: 0.6;
+}
+@media only screen and (min-width: 700px) {
+  .link-slider .link-virtual {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .link-slider .link-virtual {
+    width: 230px;
+    font-size: 20px;
+  }
+}
+
+.carousel-item {
+  height: calc(100vh - 36px);
+  max-height: 768px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-caption {
+  bottom: 4rem;
+  z-index: 10;
+}
+
+.title-item {
+  font-family: "Courier New";
+  font-size: 25px;
+  text-align: left;
+  max-width: 550px;
+}
+@media only screen and (min-width: 700px) {
+  .title-item {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .title-item {
+    font-size: 36px;
+  }
+}
+
 .slider-home .carousel-indicators li {
   visibility: hidden;
 }
@@ -3796,6 +3819,9 @@ body {
           backdrop-filter: blur(10px);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+.btn-mensaje:hover {
+  opacity: 0.8;
 }
 .btn-mensaje i {
   display: none;
@@ -3894,21 +3920,6 @@ body {
   margin-right: 20px;
 }
 
-/* .nav-filter  {
-    margin-bottom: 80px;
-    button {
-        border: 1px solid #707071;
-        color: #707071;
-        padding: 6px 23px;
-        border-radius: 8px;
-        &.is-checked  {
-            background-color: #52B0C4;
-            color: white;
-            border: 1px solid #707071;
-            outline: none;
-        }
-    }
-} */
 .contenido-pills {
   background-color: white;
   padding: 22px 0 0 0;
@@ -4135,14 +4146,16 @@ body {
   right: 0;
 }
 .box-img-obra .box-tools i {
+  color: white;
   font-size: 22px;
   margin: 0 9px 0 0;
 }
 
-section.section-detalle-obra {
+.section-detalle-obra {
   padding: 0 0 90px 0;
 }
 
+/* SLIDER STYLE */
 .descripcion-obra {
   display: flex;
   flex-direction: column;
@@ -4164,15 +4177,18 @@ section.section-detalle-obra {
   display: flex;
 }
 
-.btn-saber {
-  border: 1px solid #A2B440;
-  color: #A2B440;
-  font-size: 22px;
-  border-radius: 0;
+.contenido-saber-mas {
+  margin-top: 85px;
 }
-.btn-saber:hover {
-  border: 1px solid #A2B440;
-  color: #A2B440;
+.contenido-saber-mas p:last-child {
+  margin-top: 40px;
+}
+
+.box-ocultar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .section-carrusel-relacionadas {

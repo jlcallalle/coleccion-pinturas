@@ -110,9 +110,12 @@
 }
 
 
-/* Toggle BTN for Menu */
+
+/* TOGLE BTN MENU
+   =========== */
+
 .button-nav--toggle {
-  background: rgba(207, 159, 159, 0.2);
+  //background: rgba(207, 159, 159, 0.2);
   height: 48px;
   position: relative;
   transition: transform 0.4s;
@@ -205,142 +208,9 @@
 
 
 
- 
-/* Slider Style*/
-.slider {
-    background-color: #F8F8F8;
-    position: relative;
-}
 
-.slider  .carousel-control-prev {
-    right: 140px;
-    left: auto;
-}
-
-.slide .carousel-control-next {
-    right: 78px;
-}
-
-.slider  .carousel-control-next, .slider .carousel-control-prev {
-    align-items: flex-end;
-    margin-bottom: 50px;
-    width: auto;
-    bottom: 60px;
-}
-
-
-.slider-number {
-    display: flex;
-    font-size: 30px;
-    align-items: center;
-    font-family: 'Didot';
-    .indice {
-      font-size: 54px;
-      position: relative;
-      top: -16px
-    }
-
-    .slash {
-      font-size: 96px;
-      position: relative;
-      left: -10px;
-    }
-
-    .cantidad {
-      font-size: 25px;
-      position: relative;
-      top: 14px;
-    }
-    
-}
-
-.link-slider {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  width: 100%;
-  @include min-screen($d){
-		width: auto;
-	}
-  .link-obras {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $turquesa;
-    font-size: 18px;
-    color: white;
-    width: 50%;
-    height: 80px;
-    text-decoration: none;
-    @include min-screen($tp){
-      font-size: 25px;
-    }
-    @include min-screen($d){
-      width: 230px;
-      font-size: 20px;
-    }
-  }
-  .link-virtual {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    background-color: transparent;
-    border-top: #747474;
-    color: white;
-    width: 50%;
-    height: 80px;
-    text-decoration: none;
-    border-top: 1px solid #DBDBDB;
-    opacity: 0.6;
-    @include min-screen($tp){
-      font-size: 25px;
-    }
-    @include min-screen($d){
-      width: 230px;
-      font-size: 20px;
-    }
-  }
-}
-.carousel-caption {
-    bottom: 4rem;
-    z-index: 10;
-}
-
- 
-.carousel-item {
-    height: calc(100vh - 36px);
-    max-height: 768px;
-    background: no-repeat center center scroll;
-    background-size: cover;
-}
-
-.carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-}
-
-.title-item {
-  font-family: "Courier New";
-  font-size: 25px;
-  text-align: left;
-  max-width: 550px;
-  @include min-screen($tp){
-		font-size: 30px;
-	}
- @include min-screen($d){
-  font-size: 36px;
-	}
-}
-
-
-
-
-/* búsqueda */
+/* BÚSQUEDA
+   =========== */
 
 .searchbox{
   position:relative;

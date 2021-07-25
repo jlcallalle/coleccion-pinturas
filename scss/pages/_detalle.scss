@@ -23,6 +23,7 @@
         bottom: -40px;
         right: 0;
         i {
+            color:white;
             font-size: 22px;
             margin: 0 9px 0 0;
         }
@@ -30,10 +31,11 @@
 }
 
 
-section.section-detalle-obra {
+.section-detalle-obra {
     padding: 0 0 90px 0;
 }
 
+/* SLIDER STYLE */
 
 .descripcion-obra {
     display: flex;
@@ -56,20 +58,22 @@ section.section-detalle-obra {
     display: flex;
 }
 
-.btn-saber {
-    border:1px solid $verde;
-    color: $verde;
-    font-size: 22px;
-    border-radius: 0;
-    &:hover {
-        border:1px solid $verde;
-        color: $verde;
+
+.contenido-saber-mas {
+    margin-top: 85px;
+    p {
+        &:last-child {
+            margin-top: 40px;
+        }
     }
 }
-.item-relacionado {
-    //width: 200px;
-}
 
+.box-ocultar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
 
 .section-carrusel-relacionadas {
     padding: 0 0 60px 0;
