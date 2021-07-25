@@ -4152,7 +4152,7 @@ body {
 }
 
 .section-detalle-obra {
-  padding: 0 0 90px 0;
+  padding: 0 0 130px 0;
 }
 
 /* SLIDER STYLE */
@@ -4178,6 +4178,7 @@ body {
 }
 
 .contenido-saber-mas {
+  display: none;
   margin-top: 85px;
 }
 .contenido-saber-mas p:last-child {
