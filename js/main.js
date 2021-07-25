@@ -109,6 +109,27 @@ var MyApp = {
     },
     carruselBusqueda : function () {
           /* Slider Buscador */
+
+          $('.carrousel-buscador').owlCarousel({
+            margin:10,
+            nav: true,
+            dots: false, 
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            loop: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+          })
+
+            /* 
             var owl = $('.owl-carousel');
             owl.owlCarousel({
                 margin:10,
@@ -127,7 +148,7 @@ var MyApp = {
                         items: 5
                     }
                 }
-            })
+            }) */
     },
     toggleFlipCard : function () {
         $(".card-flip").click(function (e) {
@@ -141,28 +162,27 @@ var MyApp = {
             window.location.href = $(this).attr('href');
         });
     },
-    carruselRelacionado : function () {
+    carruselDetalle : function () {
+        console.log('carrousel detalle');
+        $('.carousel-detalle').owlCarousel({
+            margin:10,
+            nav: true,
+            dots: false, 
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            loop: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
 
-         console.log('carrousel relacionado');
-         
-          var owl = $('.owl-carousel-relacionados');
-          owl.owlCarousel({
-              margin:20,
-              nav: true,
-              dots: false, 
-              loop: true,
-              responsive: {
-                  0: {
-                      items: 2
-                  },
-                  600: {
-                      items: 3
-                  },
-                  1000: {
-                      items: 6
-                  }
-              }
-          })
   },
 }
 
@@ -177,8 +197,12 @@ $(function () {
     MyApp.mensajeSliderHome();
     MyApp.toggleFlipCard();
     MyApp.linkCard();
-    if ($('.page').length) {
+
+    if ($('.page-buscador').length) {
         MyApp.carruselBusqueda();
-        MyApp.carruselRelacionado();
+    }
+    
+    if ($('.page-detalle').length) {
+        MyApp.carruselDetalle();
     }
 });
