@@ -4195,6 +4195,7 @@ body {
   padding: 0 0 60px 0;
 }
 
+/* EFECTO ZOOM */
 .nav-page {
   background-color: #0D7D9F;
 }
@@ -4318,7 +4319,7 @@ body {
   flex-direction: column;
   border-radius: 20px;
   padding: 0 5px;
-  width: 197px;
+  max-width: 197px;
 }
 .item-obra-small img {
   border-radius: 20px;
@@ -4404,4 +4405,9 @@ body {
   .home-box {
     display: grid;
   }
+}
+
+.title-second {
+  font-size: 18px;
+  color: #707071;
 }

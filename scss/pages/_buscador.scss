@@ -105,9 +105,6 @@
 }
 
 
-.box-carrousel {
-    //margin-bottom: 50px;
-}
 
 .item-obra-small {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);;
@@ -115,7 +112,7 @@
     flex-direction: column;
     border-radius: 20px;
     padding: 0 5px;
-    width: 197px;
+    max-width: 197px;
     img {
         border-radius: 20px;  
     }

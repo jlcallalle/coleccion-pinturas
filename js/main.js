@@ -109,7 +109,6 @@ var MyApp = {
     },
     carruselBusqueda : function () {
           /* Slider Buscador */
-
           $('.carrousel-buscador').owlCarousel({
             margin:10,
             nav: true,
@@ -128,27 +127,6 @@ var MyApp = {
                 }
             }
           })
-
-            /* 
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                margin:10,
-                nav: true,
-                dots: false, 
-                navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
-                loop: true,
-                responsive: {
-                    0: {
-                        items: 2
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            }) */
     },
     toggleFlipCard : function () {
         $(".card-flip").click(function (e) {
