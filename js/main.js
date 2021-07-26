@@ -205,5 +205,29 @@ $(function () {
         $(".wrapper").toggleClass("accebility-bar-contrast-filter");
     });
 
+    var donde = $(" .header-top-inner a, .nav-pills a, .nav-pills button,  .descripcion-obra h2, .descripcion-obra p, .item-news h4,  .item-news p");
+    var sizeFuenteOriginal = donde.css("font-size");
+    var sizeFuenteOriginalNum = parseFloat(sizeFuenteOriginal, 10);
+    var sizeFuenteMaxima = sizeFuenteOriginalNum * 1.331;
+
+    $(".accebility-bar-aumentarFont").click(function() {
+        var sizeFuenteActual = donde.css("font-size");
+        console.log('sizeFuenteActual', sizeFuenteActual)
+        var sizeFuenteActualNum = parseFloat(sizeFuenteActual, 10);
+        var sizeFuenteNuevo = sizeFuenteActualNum * 1.1;
+        if (sizeFuenteNuevo <= sizeFuenteMaxima)
+            donde.css("font-size", sizeFuenteNuevo);
+        return false
+    });
+
+    $(".accebility-bar-disminuirFont").click(function() {
+        var sizeFuenteActual = donde.css("font-size");
+        var sizeFuenteActualNum = parseFloat(sizeFuenteActual, 10);
+        var sizeFuenteNuevo = sizeFuenteActualNum / 1.1;
+        if (sizeFuenteNuevo >= sizeFuenteOriginalNum)
+            donde.css("font-size", sizeFuenteNuevo);
+        return false
+    });
+    
 
 });
