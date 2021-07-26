@@ -4220,6 +4220,7 @@ body {
 }
 .box-img-obra img {
   box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.16);
+  max-height: 380px;
 }
 .box-img-obra .box-tools {
   position: absolute;
