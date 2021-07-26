@@ -31,4 +31,11 @@
     margin: 0;
     background-color: transparent;
     margin-right: 12px;
+    outline: none;
+    &:hover {
+        outline: none;
+    }
+    &:focus {
+        outline: none;
+    }
 }
