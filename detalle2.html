@@ -8,8 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" />
+    <script src="js/js-image-zoom.js"></script>
     <title>Banco Central</title>
   </head>
   <body class="page page-detalle">
@@ -96,12 +95,8 @@
               <div class="box-detalle-obra">
                 <div class="box-img-obra">
                   <!-- <img src="images/detalle-obra-extra.png" alt="">  -->
-                  <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                      <a href="images/detalle-obra-zoom.png" class="image-zoom" data-caption="título de obra" data-width="934" data-height="540" itemprop="contentUrl">
-                        <img src="images/detalle-obra-extra.png" itemprop="thumbnail" alt="Image description">
-                      </a>
-                    </figure>
+                  <div id="img-container">
+                    <img src="images/1.jpg" />
                   </div>
                   <div class="box-tools">
                     <a href="" class="image-zoom"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -209,48 +204,6 @@
             </div>
           </section>
 
-          <!-- Zoom Galeria 😉 -->
-           <div class="spacer"></div>
-           
-           <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-             <div class="pswp__bg"></div>
-             <div class="pswp__scroll-wrap">
-               <div class="pswp__container">
-                 <div class="pswp__item"></div>
-                 <div class="pswp__item"></div>
-                 <div class="pswp__item"></div>
-               </div>
-               <div class="pswp__ui pswp__ui--hidden">
-                 <div class="pswp__top-bar">
-                   <div class="pswp__counter"></div>
-                   <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                   <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
-                   <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                   <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                   <div class="pswp__preloader">
-                     <div class="pswp__preloader__icn">
-                       <div class="pswp__preloader__cut">
-                         <div class="pswp__preloader__donut"></div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                   <div class="pswp__share-tooltip"></div>
-                 </div>
-                 <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                 </button>
-                 <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                 </button>
-                 <div class="pswp__caption">
-                   <div class="pswp__caption__center"></div>
-                 </div>
-               </div>
-             </div>
-           </div> 
-
-         <!-- Fin Zoom Galeria 😉 -->
-
           <div class="footer ">
             <div class="footer-top">
               <div class="container">
@@ -309,45 +262,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
     <script src="js/main.js" ></script>
 
     <script>
-
-      'use strict';
-      (function($) {
-        var container = [];
+      var options1 = {
+          width: 400,
+          zoomWidth: 500,
+          offset: {vertical: 0, horizontal: 10},
+          scale: 1.5,
+      };
       
-        $('#gallery').find('figure').each(function() {
-          var $link = $(this).find('a'),
-            item = {
-              src: $link.attr('href'),
-              w: $link.data('width'),
-              h: $link.data('height'),
-              title: $link.data('caption')
-            };
-          container.push(item);
-        });
-      
-        $('.image-zoom').click(function(event) {
-          event.preventDefault();
-          var $pswp = $('.pswp')[0],
-            options = {
-              index: $(this).parent('figure').index(),
-              bgOpacity: 0.85,
-              showHideOpacity: true
-            };
-      
-          var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
-          gallery.init();
-        });
-      
-      }(jQuery));
+      // If the width and height of the image are not known or to adjust the image to the container of it
+      var options2 = {
+          fillContainer: true,
+          offset: {vertical: 0, horizontal: 10}
+      };
+      new ImageZoom(document.getElementById("img-container"), options1);
       
       </script>
-
-
 
 
     
