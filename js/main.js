@@ -199,7 +199,11 @@ $(function () {
         e.preventDefault();
     });
 
-    
+    //var donde = $("#banner, #content, footer");
+    $(".accebility-bar-contraste").click(function(e) {
+        e.preventDefault();
+        $(".wrapper").toggleClass("accebility-bar-contrast-filter");
+    });
 
 
 });

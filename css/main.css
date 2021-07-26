@@ -3313,6 +3313,86 @@ body {
   src: url("/fonts/didot/didot-regular.ttf");
 }
 /* Components */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.accebility-bar-contrast-filter,
+.accebility-bar-contrast-filter p,
+.accebility-bar-contrast-filter h1,
+.accebility-bar-contrast-filter h2,
+.accebility-bar-contrast-filter h3,
+.accebility-bar-contrast-filter h4,
+.accebility-bar-contrast-filter h5,
+.accebility-bar-contrast-filter h6,
+.accebility-bar-contrast-filter section,
+.accebility-bar-contrast-filter article,
+.accebility-bar-contrast-filter dt,
+.accebility-bar-contrast-filter dd,
+.accebility-bar-contrast-filter label,
+.accebility-bar-contrast-filter span,
+.accebility-bar-contrast-filter ul,
+.accebility-bar-contrast-filter li,
+.accebility-bar-contrast-filter div,
+.accebility-bar-contrast-filter i,
+.accebility-bar-contrast-filter footer,
+.accebility-bar-contrast-filter button,
+.accebility-bar-contrast-filter button:before,
+.accebility-bar-contrast-filter a,
+.accebility-bar-contrast-filter input {
+  background: black !important;
+  color: yellow !important;
+}
+
+.accebility-bar-contrast-filter button,
+.accebility-bar-contrast-filter button:before button {
+  border-color: yellow;
+}
+
+.accebility-bar-contrast-filter button:before {
+  border-color: yellow;
+}
+
+.accebility-bar-contrast-filter a,
+.accebility-bar-contrast-filter button:before a,
+.accebility-bar-contrast-filter input,
+.accebility-bar-contrast-filter button:before input {
+  border-color: yellow;
+}
+
+.accebility-bar-contrast-filter .button-nav--toggle span {
+  background-color: yellow !important;
+}
+.accebility-bar-contrast-filter .carousel-control-prev-icon,
+.accebility-bar-contrast-filter .carousel-control-next-icon {
+  background-color: yellow !important;
+}
+.accebility-bar-contrast-filter .btn-mensaje {
+  background-color: yellow !important;
+}
+.accebility-bar-contrast-filter .pswp__ui--idle .pswp__top-bar {
+  opacity: 1;
+}
+.accebility-bar-contrast-filter .pswp__button, .accebility-bar-contrast-filter .pswp__button--arrow--left:before,
+.accebility-bar-contrast-filter .pswp__button--arrow--right:before {
+  background-color: yellow !important;
+}
+
 .btn-saber {
   border: 1px solid #A2B440;
   color: #A2B440;
